@@ -11,9 +11,41 @@
     <p>Complete our Career Interest Survey to find the best career for you!</p>
 
     <form id="survey-form">
-        <input type="text" id="name" required>
-        <input type="email" id="email" pattern="[a-z0-5]{8,}" required>
-        <input type="number" id="number" min="10" max="100">
+
+        <label id="name-label">Name<input type="text" id="name" placeholder="Enter your name" required></label>
+        <label id="email-label">Email<input type="email" id="email" placeholder="Enter your email" pattern="[a-z0-5]{8,}" required></label>
+        <label id="number-label">Age<input type="number" id="number" min="10" max="100" placeholder="Age"></label>
+
+        <label>Which option best describes your current role?
+        <select id="dropdown">
+            <option value="">(Select One)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Fuller Time Learner</option>
+            <option value="4">Other</option>
+        </select>
+        </label>
+
+        <label id="questionnaire">Would you be interested in taking a questionnaire that best suits your career?
+            <label><input type="radio" name="questionnaire">Definitely</label>
+            <label><input type="radio" name="questionnaire">Maybe</label>
+            <label><input type="radio" name="questionnaire">Not sure</label>
+        </label>
+
+        <label>Select the roles you are interested in
+            <label><input type="checkbox" name="role">Software Engineer</label>
+            <label><input type="checkbox" name="role">Front-end Developer</label>
+            <label><input type="checkbox" name="role">Back-end Developer</label>
+            <label><input type="checkbox" name="role">Full-stack developer</label>
+            <label><input type="checkbox" name="role">Data Analyst</label>
+            <label><input type="checkbox" name="role">Information Techology</label>
+            <label><input type="checkbox" name="role">Software Developer</label>
+        </label>
+
+        <label>Any comments or questions?
+            <textarea name="comment" rows="3" cols="30" placeholder="Please put your comments and questions here"></textarea>
+        </label>
+        
     </form>
 </body>
 </html>
