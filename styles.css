@@ -6,9 +6,33 @@ body {
     font-size: 16px;
 }
 
-h1, p {
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(100,255,100,0.10),rgba(100,255,100,0.25)),url(https://career.charlotte.edu/sites/default/files/uploads/Aerial_Atkins_Clocktower_Cupola.JPG);
+}
+
+h1,p {
     margin: 1em auto;
     text-align: center;
+    color: black;
+}
+
+p {
+    text-align:center;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 form {
@@ -17,9 +41,10 @@ form {
     min-width: 300px;
     margin: 0 auto;
     padding: 40px;
-    background-color: green;
+    background-color: #023020;
     color: white;
     font-size: 18px;
+    border-radius: 0.25rem;
 }
 
 label {
@@ -37,4 +62,16 @@ input, textarea, select {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
+}
+
+#submit {
+    font-size: 1.1rem;
+    background-color: gold;
+    border-color: black;
+    color: black;
+}
+
+input {
+    border-radius: 0.25rem;
+    border: none;
 }
